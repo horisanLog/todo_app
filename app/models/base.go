@@ -11,7 +11,7 @@ import (
 	// _ "github.com/mattn/go-sqlite3"
 
 	"github.com/google/uuid"
-	_ "github.com/lib/pq"
+	"github.com/lib/pq"
 )
 
 var Db *sql.DB
