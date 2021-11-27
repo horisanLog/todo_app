@@ -8,7 +8,7 @@ import (
 	"os"
 	"todo_app/config"
 
-	//  _ "github.com/mattn/go-sqlite3"
+	_ "github.com/mattn/go-sqlite3"
 
 	"github.com/google/uuid"
 	"github.com/lib/pq"
