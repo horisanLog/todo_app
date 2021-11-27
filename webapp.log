@@ -1,0 +1,1799 @@
+2021/11/14 15:50:15 main.go:17: test
+2021/11/14 17:18:56 base.go:41: sql: unknown driver "postgres" (forgotten import?)
+2021/11/14 17:25:49 base.go:41: sql: unknown driver "postgres" (forgotten import?)
+2021/11/14 17:28:55 base.go:41: sql: unknown driver "postgres" (forgotten import?)
+2021/11/14 17:32:26 base.go:41: sql: unknown driver "postgres" (forgotten import?)
+2021/11/14 20:00:21 server.go:3119: http: panic serving 127.0.0.1:50059: runtime error: invalid memory address or nil pointer dereference
+goroutine 20 [running]:
+net/http.(*conn).serve.func1(0xc0000b8e60)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.errRecover(0xc00005baa8)
+	/usr/local/go/src/text/template/exec.go:163 +0x1b2
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:965 +0x1b9
+text/template.(*Template).execute(0x0, 0x455b0a0, 0xc000192000, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/text/template/exec.go:217 +0x180
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:203
+todo_app/app/controllers.top(0x4560150, 0xc000192000, 0xc000184000)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x4508490, 0x4560150, 0xc000192000, 0xc000184000)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4756780, 0x4560150, 0xc000192000, 0xc000184000)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010c000, 0x4560150, 0xc000192000, 0xc000184000)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0000b8e60, 0x4560800, 0xc000072040)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/14 20:00:21 server.go:3119: http: panic serving 127.0.0.1:50060: runtime error: invalid memory address or nil pointer dereference
+goroutine 21 [running]:
+net/http.(*conn).serve.func1(0xc0000b8f00)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.errRecover(0xc0000c1aa8)
+	/usr/local/go/src/text/template/exec.go:163 +0x1b2
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:965 +0x1b9
+text/template.(*Template).execute(0x0, 0x455b0a0, 0xc00010c0e0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/text/template/exec.go:217 +0x180
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:203
+todo_app/app/controllers.top(0x4560150, 0xc00010c0e0, 0xc000102100)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x4508490, 0x4560150, 0xc00010c0e0, 0xc000102100)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4756780, 0x4560150, 0xc00010c0e0, 0xc000102100)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010c000, 0x4560150, 0xc00010c0e0, 0xc000102100)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0000b8f00, 0x4560800, 0xc0000da440)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/14 20:00:21 server.go:3119: http: panic serving 127.0.0.1:50061: runtime error: invalid memory address or nil pointer dereference
+goroutine 34 [running]:
+net/http.(*conn).serve.func1(0xc000208000)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.errRecover(0xc000218aa8)
+	/usr/local/go/src/text/template/exec.go:163 +0x1b2
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:965 +0x1b9
+text/template.(*Template).execute(0x0, 0x455b0a0, 0xc00023c000, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/text/template/exec.go:217 +0x180
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:203
+todo_app/app/controllers.top(0x4560150, 0xc00023c000, 0xc000226000)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x4508490, 0x4560150, 0xc00023c000, 0xc000226000)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4756780, 0x4560150, 0xc00023c000, 0xc000226000)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010c000, 0x4560150, 0xc00023c000, 0xc000226000)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc000208000, 0x4560800, 0xc00021e000)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/14 20:00:22 server.go:3119: http: panic serving 127.0.0.1:50066: runtime error: invalid memory address or nil pointer dereference
+goroutine 6 [running]:
+net/http.(*conn).serve.func1(0xc0001ba000)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.errRecover(0xc000218aa8)
+	/usr/local/go/src/text/template/exec.go:163 +0x1b2
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:965 +0x1b9
+text/template.(*Template).execute(0x0, 0x455b0a0, 0xc00023c0e0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/text/template/exec.go:217 +0x180
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:203
+todo_app/app/controllers.top(0x4560150, 0xc00023c0e0, 0xc000226100)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x4508490, 0x4560150, 0xc00023c0e0, 0xc000226100)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4756780, 0x4560150, 0xc00023c0e0, 0xc000226100)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010c000, 0x4560150, 0xc00023c0e0, 0xc000226100)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0001ba000, 0x4560800, 0xc00021e140)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/14 20:00:22 server.go:3119: http: panic serving 127.0.0.1:50067: runtime error: invalid memory address or nil pointer dereference
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc0001ba0a0)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.errRecover(0xc00005baa8)
+	/usr/local/go/src/text/template/exec.go:163 +0x1b2
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:965 +0x1b9
+text/template.(*Template).execute(0x0, 0x455b0a0, 0xc0001920e0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/text/template/exec.go:217 +0x180
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:203
+todo_app/app/controllers.top(0x4560150, 0xc0001920e0, 0xc000184100)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x4508490, 0x4560150, 0xc0001920e0, 0xc000184100)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4756780, 0x4560150, 0xc0001920e0, 0xc000184100)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010c000, 0x4560150, 0xc0001920e0, 0xc000184100)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0001ba0a0, 0x4560800, 0xc0000721c0)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/14 20:00:22 server.go:3119: http: panic serving 127.0.0.1:50068: runtime error: invalid memory address or nil pointer dereference
+goroutine 23 [running]:
+net/http.(*conn).serve.func1(0xc0000b8fa0)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.errRecover(0xc000056aa8)
+	/usr/local/go/src/text/template/exec.go:163 +0x1b2
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:965 +0x1b9
+text/template.(*Template).execute(0x0, 0x455b0a0, 0xc00010c1c0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/text/template/exec.go:217 +0x180
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:203
+todo_app/app/controllers.top(0x4560150, 0xc00010c1c0, 0xc000102200)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x4508490, 0x4560150, 0xc00010c1c0, 0xc000102200)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4756780, 0x4560150, 0xc00010c1c0, 0xc000102200)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010c000, 0x4560150, 0xc00010c1c0, 0xc000102200)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0000b8fa0, 0x4560800, 0xc0000da580)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/14 20:00:27 server.go:3119: http: panic serving 127.0.0.1:50089: runtime error: invalid memory address or nil pointer dereference
+goroutine 37 [running]:
+net/http.(*conn).serve.func1(0xc0002080a0)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.errRecover(0xc000056aa8)
+	/usr/local/go/src/text/template/exec.go:163 +0x1b2
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:965 +0x1b9
+text/template.(*Template).execute(0x0, 0x455b0a0, 0xc00023c1c0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/text/template/exec.go:217 +0x180
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:203
+todo_app/app/controllers.top(0x4560150, 0xc00023c1c0, 0xc000102300)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x4508490, 0x4560150, 0xc00023c1c0, 0xc000102300)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4756780, 0x4560150, 0xc00023c1c0, 0xc000102300)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010c000, 0x4560150, 0xc00023c1c0, 0xc000102300)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0002080a0, 0x4560800, 0xc0000da680)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/14 20:00:27 server.go:3119: http: panic serving 127.0.0.1:50090: runtime error: invalid memory address or nil pointer dereference
+goroutine 38 [running]:
+net/http.(*conn).serve.func1(0xc000208140)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.errRecover(0xc000218aa8)
+	/usr/local/go/src/text/template/exec.go:163 +0x1b2
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:965 +0x1b9
+text/template.(*Template).execute(0x0, 0x455b0a0, 0xc00023c2a0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/text/template/exec.go:217 +0x180
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:203
+todo_app/app/controllers.top(0x4560150, 0xc00023c2a0, 0xc000226200)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x4508490, 0x4560150, 0xc00023c2a0, 0xc000226200)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4756780, 0x4560150, 0xc00023c2a0, 0xc000226200)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010c000, 0x4560150, 0xc00023c2a0, 0xc000226200)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc000208140, 0x4560800, 0xc00021e240)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/14 20:00:27 server.go:3119: http: panic serving 127.0.0.1:50091: runtime error: invalid memory address or nil pointer dereference
+goroutine 41 [running]:
+net/http.(*conn).serve.func1(0xc0002081e0)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.errRecover(0xc000218aa8)
+	/usr/local/go/src/text/template/exec.go:163 +0x1b2
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:965 +0x1b9
+text/template.(*Template).execute(0x0, 0x455b0a0, 0xc00023c380, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/text/template/exec.go:217 +0x180
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:203
+todo_app/app/controllers.top(0x4560150, 0xc00023c380, 0xc000226300)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x4508490, 0x4560150, 0xc00023c380, 0xc000226300)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4756780, 0x4560150, 0xc00023c380, 0xc000226300)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010c000, 0x4560150, 0xc00023c380, 0xc000226300)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0002081e0, 0x4560800, 0xc00021e3c0)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/14 20:00:37 server.go:3119: http: panic serving 127.0.0.1:50133: runtime error: invalid memory address or nil pointer dereference
+goroutine 25 [running]:
+net/http.(*conn).serve.func1(0xc0000b9040)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.errRecover(0xc000057aa8)
+	/usr/local/go/src/text/template/exec.go:163 +0x1b2
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:965 +0x1b9
+text/template.(*Template).execute(0x0, 0x455b0a0, 0xc00010c2a0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/text/template/exec.go:217 +0x180
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:203
+todo_app/app/controllers.top(0x4560150, 0xc00010c2a0, 0xc000102400)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x4508490, 0x4560150, 0xc00010c2a0, 0xc000102400)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4756780, 0x4560150, 0xc00010c2a0, 0xc000102400)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010c000, 0x4560150, 0xc00010c2a0, 0xc000102400)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0000b9040, 0x4560800, 0xc0000da700)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/14 20:00:37 server.go:3119: http: panic serving 127.0.0.1:50134: runtime error: invalid memory address or nil pointer dereference
+goroutine 26 [running]:
+net/http.(*conn).serve.func1(0xc0000b90e0)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.errRecover(0xc000058aa8)
+	/usr/local/go/src/text/template/exec.go:163 +0x1b2
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:965 +0x1b9
+text/template.(*Template).execute(0x0, 0x455b0a0, 0xc00023c460, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/text/template/exec.go:217 +0x180
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:203
+todo_app/app/controllers.top(0x4560150, 0xc00023c460, 0xc000102500)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x4508490, 0x4560150, 0xc00023c460, 0xc000102500)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4756780, 0x4560150, 0xc00023c460, 0xc000102500)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010c000, 0x4560150, 0xc00023c460, 0xc000102500)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0000b90e0, 0x4560800, 0xc0000da780)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/14 20:00:37 server.go:3119: http: panic serving 127.0.0.1:50135: runtime error: invalid memory address or nil pointer dereference
+goroutine 44 [running]:
+net/http.(*conn).serve.func1(0xc000208280)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.errRecover(0xc000058aa8)
+	/usr/local/go/src/text/template/exec.go:163 +0x1b2
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:965 +0x1b9
+text/template.(*Template).execute(0x0, 0x455b0a0, 0xc00023c540, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/text/template/exec.go:217 +0x180
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:203
+todo_app/app/controllers.top(0x4560150, 0xc00023c540, 0xc000226400)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x4508490, 0x4560150, 0xc00023c540, 0xc000226400)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4756780, 0x4560150, 0xc00023c540, 0xc000226400)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010c000, 0x4560150, 0xc00023c540, 0xc000226400)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc000208280, 0x4560800, 0xc00021e540)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/14 20:00:38 server.go:3119: http: panic serving 127.0.0.1:50141: runtime error: invalid memory address or nil pointer dereference
+goroutine 9 [running]:
+net/http.(*conn).serve.func1(0xc0001ba140)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.errRecover(0xc00005baa8)
+	/usr/local/go/src/text/template/exec.go:163 +0x1b2
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:965 +0x1b9
+text/template.(*Template).execute(0x0, 0x455b0a0, 0xc00023c620, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/text/template/exec.go:217 +0x180
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:203
+todo_app/app/controllers.top(0x4560150, 0xc00023c620, 0xc000184200)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x4508490, 0x4560150, 0xc00023c620, 0xc000184200)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4756780, 0x4560150, 0xc00023c620, 0xc000184200)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010c000, 0x4560150, 0xc00023c620, 0xc000184200)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0001ba140, 0x4560800, 0xc0000722c0)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/14 20:00:38 server.go:3119: http: panic serving 127.0.0.1:50142: runtime error: invalid memory address or nil pointer dereference
+goroutine 10 [running]:
+net/http.(*conn).serve.func1(0xc0001ba1e0)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.errRecover(0xc00005caa8)
+	/usr/local/go/src/text/template/exec.go:163 +0x1b2
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:965 +0x1b9
+text/template.(*Template).execute(0x0, 0x455b0a0, 0xc00023c700, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/text/template/exec.go:217 +0x180
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:203
+todo_app/app/controllers.top(0x4560150, 0xc00023c700, 0xc000184300)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x4508490, 0x4560150, 0xc00023c700, 0xc000184300)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4756780, 0x4560150, 0xc00023c700, 0xc000184300)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010c000, 0x4560150, 0xc00023c700, 0xc000184300)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0001ba1e0, 0x4560800, 0xc000072340)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/14 20:00:38 server.go:3119: http: panic serving 127.0.0.1:50143: runtime error: invalid memory address or nil pointer dereference
+goroutine 48 [running]:
+net/http.(*conn).serve.func1(0xc000208320)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.errRecover(0xc00005caa8)
+	/usr/local/go/src/text/template/exec.go:163 +0x1b2
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:965 +0x1b9
+text/template.(*Template).execute(0x0, 0x455b0a0, 0xc00023c7e0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/text/template/exec.go:217 +0x180
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:203
+todo_app/app/controllers.top(0x4560150, 0xc00023c7e0, 0xc000226500)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x4508490, 0x4560150, 0xc00023c7e0, 0xc000226500)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4756780, 0x4560150, 0xc00023c7e0, 0xc000226500)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010c000, 0x4560150, 0xc00023c7e0, 0xc000226500)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc000208320, 0x4560800, 0xc00021e740)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/14 20:00:40 server.go:3119: http: panic serving 127.0.0.1:50153: runtime error: invalid memory address or nil pointer dereference
+goroutine 50 [running]:
+net/http.(*conn).serve.func1(0xc0002083c0)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.errRecover(0xc00005caa8)
+	/usr/local/go/src/text/template/exec.go:163 +0x1b2
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:965 +0x1b9
+text/template.(*Template).execute(0x0, 0x455b0a0, 0xc00023c8c0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/text/template/exec.go:217 +0x180
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:203
+todo_app/app/controllers.top(0x4560150, 0xc00023c8c0, 0xc000226600)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x4508490, 0x4560150, 0xc00023c8c0, 0xc000226600)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4756780, 0x4560150, 0xc00023c8c0, 0xc000226600)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010c000, 0x4560150, 0xc00023c8c0, 0xc000226600)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0002083c0, 0x4560800, 0xc00021e840)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/14 20:00:40 server.go:3119: http: panic serving 127.0.0.1:50154: runtime error: invalid memory address or nil pointer dereference
+goroutine 51 [running]:
+net/http.(*conn).serve.func1(0xc000208460)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.errRecover(0xc00005baa8)
+	/usr/local/go/src/text/template/exec.go:163 +0x1b2
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:965 +0x1b9
+text/template.(*Template).execute(0x0, 0x455b0a0, 0xc0001921c0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/text/template/exec.go:217 +0x180
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:203
+todo_app/app/controllers.top(0x4560150, 0xc0001921c0, 0xc000226700)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x4508490, 0x4560150, 0xc0001921c0, 0xc000226700)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4756780, 0x4560150, 0xc0001921c0, 0xc000226700)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010c000, 0x4560150, 0xc0001921c0, 0xc000226700)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc000208460, 0x4560800, 0xc00021e8c0)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/14 20:00:40 server.go:3119: http: panic serving 127.0.0.1:50155: runtime error: invalid memory address or nil pointer dereference
+goroutine 12 [running]:
+net/http.(*conn).serve.func1(0xc0001ba280)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.errRecover(0xc00005baa8)
+	/usr/local/go/src/text/template/exec.go:163 +0x1b2
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:965 +0x1b9
+text/template.(*Template).execute(0x0, 0x455b0a0, 0xc0001922a0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/text/template/exec.go:217 +0x180
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:203
+todo_app/app/controllers.top(0x4560150, 0xc0001922a0, 0xc000184400)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x4508490, 0x4560150, 0xc0001922a0, 0xc000184400)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4756780, 0x4560150, 0xc0001922a0, 0xc000184400)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010c000, 0x4560150, 0xc0001922a0, 0xc000184400)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0001ba280, 0x4560800, 0xc000072440)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/14 20:00:58 server.go:3119: http: panic serving 127.0.0.1:50234: runtime error: invalid memory address or nil pointer dereference
+goroutine 53 [running]:
+net/http.(*conn).serve.func1(0xc000208500)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.errRecover(0xc00005baa8)
+	/usr/local/go/src/text/template/exec.go:163 +0x1b2
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:965 +0x1b9
+text/template.(*Template).execute(0x0, 0x455b0a0, 0xc000192460, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/text/template/exec.go:217 +0x180
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:203
+todo_app/app/controllers.top(0x4560150, 0xc000192460, 0xc000184500)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x4508490, 0x4560150, 0xc000192460, 0xc000184500)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4756780, 0x4560150, 0xc000192460, 0xc000184500)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010c000, 0x4560150, 0xc000192460, 0xc000184500)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc000208500, 0x4560800, 0xc000072540)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/14 20:00:58 server.go:3119: http: panic serving 127.0.0.1:50235: runtime error: invalid memory address or nil pointer dereference
+goroutine 54 [running]:
+net/http.(*conn).serve.func1(0xc0002085a0)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.errRecover(0xc00005caa8)
+	/usr/local/go/src/text/template/exec.go:163 +0x1b2
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:965 +0x1b9
+text/template.(*Template).execute(0x0, 0x455b0a0, 0xc00010c460, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/text/template/exec.go:217 +0x180
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:203
+todo_app/app/controllers.top(0x4560150, 0xc00010c460, 0xc000226800)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x4508490, 0x4560150, 0xc00010c460, 0xc000226800)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4756780, 0x4560150, 0xc00010c460, 0xc000226800)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010c000, 0x4560150, 0xc00010c460, 0xc000226800)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0002085a0, 0x4560800, 0xc00021e9c0)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/14 20:00:58 server.go:3119: http: panic serving 127.0.0.1:50236: runtime error: invalid memory address or nil pointer dereference
+goroutine 55 [running]:
+net/http.(*conn).serve.func1(0xc000208640)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.errRecover(0xc000058aa8)
+	/usr/local/go/src/text/template/exec.go:163 +0x1b2
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:965 +0x1b9
+text/template.(*Template).execute(0x0, 0x455b0a0, 0xc00023ca80, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/text/template/exec.go:217 +0x180
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:203
+todo_app/app/controllers.top(0x4560150, 0xc00023ca80, 0xc000226900)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x4508490, 0x4560150, 0xc00023ca80, 0xc000226900)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4756780, 0x4560150, 0xc00023ca80, 0xc000226900)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010c000, 0x4560150, 0xc00023ca80, 0xc000226900)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc000208640, 0x4560800, 0xc00021ea40)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/14 20:00:59 server.go:3119: http: panic serving 127.0.0.1:50241: runtime error: invalid memory address or nil pointer dereference
+goroutine 15 [running]:
+net/http.(*conn).serve.func1(0xc0001ba320)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.errRecover(0xc000058aa8)
+	/usr/local/go/src/text/template/exec.go:163 +0x1b2
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:965 +0x1b9
+text/template.(*Template).execute(0x0, 0x455b0a0, 0xc000192540, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/text/template/exec.go:217 +0x180
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:203
+todo_app/app/controllers.top(0x4560150, 0xc000192540, 0xc000226a00)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x4508490, 0x4560150, 0xc000192540, 0xc000226a00)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4756780, 0x4560150, 0xc000192540, 0xc000226a00)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010c000, 0x4560150, 0xc000192540, 0xc000226a00)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0001ba320, 0x4560800, 0xc00021eb40)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/14 20:00:59 server.go:3119: http: panic serving 127.0.0.1:50242: runtime error: invalid memory address or nil pointer dereference
+goroutine 16 [running]:
+net/http.(*conn).serve.func1(0xc0001ba3c0)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.errRecover(0xc00005baa8)
+	/usr/local/go/src/text/template/exec.go:163 +0x1b2
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:965 +0x1b9
+text/template.(*Template).execute(0x0, 0x455b0a0, 0xc00023cb60, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/text/template/exec.go:217 +0x180
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:203
+todo_app/app/controllers.top(0x4560150, 0xc00023cb60, 0xc000184600)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x4508490, 0x4560150, 0xc00023cb60, 0xc000184600)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4756780, 0x4560150, 0xc00023cb60, 0xc000184600)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010c000, 0x4560150, 0xc00023cb60, 0xc000184600)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0001ba3c0, 0x4560800, 0xc000072640)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/14 20:00:59 server.go:3119: http: panic serving 127.0.0.1:50243: runtime error: invalid memory address or nil pointer dereference
+goroutine 29 [running]:
+net/http.(*conn).serve.func1(0xc0000b9180)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.errRecover(0xc00005caa8)
+	/usr/local/go/src/text/template/exec.go:163 +0x1b2
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:965 +0x1b9
+text/template.(*Template).execute(0x0, 0x455b0a0, 0xc00010c540, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/text/template/exec.go:217 +0x180
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:203
+todo_app/app/controllers.top(0x4560150, 0xc00010c540, 0xc000102600)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x4508490, 0x4560150, 0xc00010c540, 0xc000102600)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4756780, 0x4560150, 0xc00010c540, 0xc000102600)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010c000, 0x4560150, 0xc00010c540, 0xc000102600)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0000b9180, 0x4560800, 0xc0000da940)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/14 20:01:29 server.go:3119: http: panic serving 127.0.0.1:50370: runtime error: invalid memory address or nil pointer dereference
+goroutine 67 [running]:
+net/http.(*conn).serve.func1(0xc0001ba460)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.errRecover(0xc000058aa8)
+	/usr/local/go/src/text/template/exec.go:163 +0x1b2
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:965 +0x1b9
+text/template.(*Template).execute(0x0, 0x455b0a0, 0xc000192620, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/text/template/exec.go:217 +0x180
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:203
+todo_app/app/controllers.top(0x4560150, 0xc000192620, 0xc000184700)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x4508490, 0x4560150, 0xc000192620, 0xc000184700)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4756780, 0x4560150, 0xc000192620, 0xc000184700)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010c000, 0x4560150, 0xc000192620, 0xc000184700)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0001ba460, 0x4560800, 0xc000072740)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/14 20:01:29 server.go:3119: http: panic serving 127.0.0.1:50371: runtime error: invalid memory address or nil pointer dereference
+goroutine 68 [running]:
+net/http.(*conn).serve.func1(0xc0001ba500)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.errRecover(0xc00005daa8)
+	/usr/local/go/src/text/template/exec.go:163 +0x1b2
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:965 +0x1b9
+text/template.(*Template).execute(0x0, 0x455b0a0, 0xc00010c620, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/text/template/exec.go:217 +0x180
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:203
+todo_app/app/controllers.top(0x4560150, 0xc00010c620, 0xc000184800)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x4508490, 0x4560150, 0xc00010c620, 0xc000184800)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4756780, 0x4560150, 0xc00010c620, 0xc000184800)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010c000, 0x4560150, 0xc00010c620, 0xc000184800)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0001ba500, 0x4560800, 0xc0000727c0)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/14 20:01:29 server.go:3119: http: panic serving 127.0.0.1:50372: runtime error: invalid memory address or nil pointer dereference
+goroutine 58 [running]:
+net/http.(*conn).serve.func1(0xc0002086e0)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.errRecover(0xc00005baa8)
+	/usr/local/go/src/text/template/exec.go:163 +0x1b2
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:965 +0x1b9
+text/template.(*Template).execute(0x0, 0x455b0a0, 0xc00023cc40, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/text/template/exec.go:217 +0x180
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:203
+todo_app/app/controllers.top(0x4560150, 0xc00023cc40, 0xc000226b00)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x4508490, 0x4560150, 0xc00023cc40, 0xc000226b00)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4756780, 0x4560150, 0xc00023cc40, 0xc000226b00)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010c000, 0x4560150, 0xc00023cc40, 0xc000226b00)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0002086e0, 0x4560800, 0xc00021ec40)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/14 20:01:51 server.go:3119: http: panic serving 127.0.0.1:50472: runtime error: invalid memory address or nil pointer dereference
+goroutine 20 [running]:
+net/http.(*conn).serve.func1(0xc0000b8f00)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.errRecover(0xc000184aa8)
+	/usr/local/go/src/text/template/exec.go:163 +0x1b2
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:965 +0x1b9
+text/template.(*Template).execute(0x0, 0x455b0a0, 0xc0001aa000, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/text/template/exec.go:217 +0x180
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:203
+todo_app/app/controllers.top(0x4560150, 0xc0001aa000, 0xc000102200)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x4508498, 0x4560150, 0xc0001aa000, 0xc000102200)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4756780, 0x4560150, 0xc0001aa000, 0xc000102200)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010c000, 0x4560150, 0xc0001aa000, 0xc000102200)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0000b8f00, 0x4560800, 0xc00018c000)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/14 20:01:51 server.go:3119: http: panic serving 127.0.0.1:50473: runtime error: invalid memory address or nil pointer dereference
+goroutine 21 [running]:
+net/http.(*conn).serve.func1(0xc0000b8fa0)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.errRecover(0xc0000c1aa8)
+	/usr/local/go/src/text/template/exec.go:163 +0x1b2
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:965 +0x1b9
+text/template.(*Template).execute(0x0, 0x455b0a0, 0xc0001aa0e0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/text/template/exec.go:217 +0x180
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:203
+todo_app/app/controllers.top(0x4560150, 0xc0001aa0e0, 0xc000102100)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x4508498, 0x4560150, 0xc0001aa0e0, 0xc000102100)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4756780, 0x4560150, 0xc0001aa0e0, 0xc000102100)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010c000, 0x4560150, 0xc0001aa0e0, 0xc000102100)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0000b8fa0, 0x4560800, 0xc0000da440)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/14 20:01:51 server.go:3119: http: panic serving 127.0.0.1:50474: runtime error: invalid memory address or nil pointer dereference
+goroutine 5 [running]:
+net/http.(*conn).serve.func1(0xc000204000)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.errRecover(0xc00005baa8)
+	/usr/local/go/src/text/template/exec.go:163 +0x1b2
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:965 +0x1b9
+text/template.(*Template).execute(0x0, 0x455b0a0, 0xc000214000, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/text/template/exec.go:217 +0x180
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:203
+todo_app/app/controllers.top(0x4560150, 0xc000214000, 0xc000206000)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x4508498, 0x4560150, 0xc000214000, 0xc000206000)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4756780, 0x4560150, 0xc000214000, 0xc000206000)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010c000, 0x4560150, 0xc000214000, 0xc000206000)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc000204000, 0x4560800, 0xc000072040)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/14 20:01:52 server.go:3119: http: panic serving 127.0.0.1:50479: runtime error: invalid memory address or nil pointer dereference
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc0002040a0)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.errRecover(0xc00005baa8)
+	/usr/local/go/src/text/template/exec.go:163 +0x1b2
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:965 +0x1b9
+text/template.(*Template).execute(0x0, 0x455b0a0, 0xc0001aa1c0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/text/template/exec.go:217 +0x180
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:203
+todo_app/app/controllers.top(0x4560150, 0xc0001aa1c0, 0xc000206100)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x4508498, 0x4560150, 0xc0001aa1c0, 0xc000206100)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4756780, 0x4560150, 0xc0001aa1c0, 0xc000206100)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010c000, 0x4560150, 0xc0001aa1c0, 0xc000206100)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0002040a0, 0x4560800, 0xc000072140)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/14 20:01:52 server.go:3119: http: panic serving 127.0.0.1:50480: runtime error: invalid memory address or nil pointer dereference
+goroutine 36 [running]:
+net/http.(*conn).serve.func1(0xc0001f4000)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.errRecover(0xc000184aa8)
+	/usr/local/go/src/text/template/exec.go:163 +0x1b2
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:965 +0x1b9
+text/template.(*Template).execute(0x0, 0x455b0a0, 0xc0002140e0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/text/template/exec.go:217 +0x180
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:203
+todo_app/app/controllers.top(0x4560150, 0xc0002140e0, 0xc0001f6000)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x4508498, 0x4560150, 0xc0002140e0, 0xc0001f6000)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4756780, 0x4560150, 0xc0002140e0, 0xc0001f6000)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010c000, 0x4560150, 0xc0002140e0, 0xc0001f6000)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0001f4000, 0x4560800, 0xc00018c1c0)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/14 20:01:52 server.go:3119: http: panic serving 127.0.0.1:50481: runtime error: invalid memory address or nil pointer dereference
+goroutine 9 [running]:
+net/http.(*conn).serve.func1(0xc000204140)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.errRecover(0xc000184aa8)
+	/usr/local/go/src/text/template/exec.go:163 +0x1b2
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:965 +0x1b9
+text/template.(*Template).execute(0x0, 0x455b0a0, 0xc0002141c0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/text/template/exec.go:217 +0x180
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:203
+todo_app/app/controllers.top(0x4560150, 0xc0002141c0, 0xc000206200)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x4508498, 0x4560150, 0xc0002141c0, 0xc000206200)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4756780, 0x4560150, 0xc0002141c0, 0xc000206200)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010c000, 0x4560150, 0xc0002141c0, 0xc000206200)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc000204140, 0x4560800, 0xc000072240)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/14 20:02:52 server.go:3119: http: panic serving 127.0.0.1:50747: runtime error: invalid memory address or nil pointer dereference
+goroutine 38 [running]:
+net/http.(*conn).serve.func1(0xc0001f40a0)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.errRecover(0xc000184aa8)
+	/usr/local/go/src/text/template/exec.go:163 +0x1b2
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:965 +0x1b9
+text/template.(*Template).execute(0x0, 0x455b0a0, 0xc0002142a0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/text/template/exec.go:217 +0x180
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:203
+todo_app/app/controllers.top(0x4560150, 0xc0002142a0, 0xc000206300)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x4508498, 0x4560150, 0xc0002142a0, 0xc000206300)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4756780, 0x4560150, 0xc0002142a0, 0xc000206300)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010c000, 0x4560150, 0xc0002142a0, 0xc000206300)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0001f40a0, 0x4560800, 0xc000072340)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/14 20:02:52 server.go:3119: http: panic serving 127.0.0.1:50748: runtime error: invalid memory address or nil pointer dereference
+goroutine 39 [running]:
+net/http.(*conn).serve.func1(0xc0001f4140)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.errRecover(0xc00005baa8)
+	/usr/local/go/src/text/template/exec.go:163 +0x1b2
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:965 +0x1b9
+text/template.(*Template).execute(0x0, 0x455b0a0, 0xc000214380, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/text/template/exec.go:217 +0x180
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:203
+todo_app/app/controllers.top(0x4560150, 0xc000214380, 0xc0001f6100)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x4508498, 0x4560150, 0xc000214380, 0xc0001f6100)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4756780, 0x4560150, 0xc000214380, 0xc0001f6100)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010c000, 0x4560150, 0xc000214380, 0xc0001f6100)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0001f4140, 0x4560800, 0xc00018c2c0)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/14 20:02:52 server.go:3119: http: panic serving 127.0.0.1:50749: runtime error: invalid memory address or nil pointer dereference
+goroutine 22 [running]:
+net/http.(*conn).serve.func1(0xc0000b9040)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+text/template.errRecover(0xc000056aa8)
+	/usr/local/go/src/text/template/exec.go:163 +0x1b2
+panic(0x4493720, 0x4746be0)
+	/usr/local/go/src/runtime/panic.go:965 +0x1b9
+text/template.(*Template).execute(0x0, 0x455b0a0, 0xc00010c0e0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/text/template/exec.go:217 +0x180
+text/template.(*Template).Execute(...)
+	/usr/local/go/src/text/template/exec.go:203
+todo_app/app/controllers.top(0x4560150, 0xc00010c0e0, 0xc000102300)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x4508498, 0x4560150, 0xc00010c0e0, 0xc000102300)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x4756780, 0x4560150, 0xc00010c0e0, 0xc000102300)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010c000, 0x4560150, 0xc00010c0e0, 0xc000102300)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0000b9040, 0x4560800, 0xc0000da540)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/23 15:17:13 server.go:3119: http: panic serving 127.0.0.1:65180: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 22 [running]:
+net/http.(*conn).serve.func1(0xc0000bf360)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x44d1820, 0xc00007a4e0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x45a3950, 0xc000190000, 0x44ae840, 0x4597850, 0xc00005baa8, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:20 +0x2ce
+todo_app/app/controllers.top(0x45a3950, 0xc000190000, 0xc000180000)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4547700, 0x45a3950, 0xc000190000, 0xc000180000)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47be060, 0x45a3950, 0xc000190000, 0xc000180000)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000112000, 0x45a3950, 0xc000190000, 0xc000180000)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0000bf360, 0x45a4100, 0xc00007c000)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/23 15:17:13 server.go:3119: http: panic serving 127.0.0.1:65181: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 23 [running]:
+net/http.(*conn).serve.func1(0xc0000bf400)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x44d1820, 0xc00007a990)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x45a3950, 0xc0001900e0, 0x44ae840, 0x4597850, 0xc0000c7aa8, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:20 +0x2ce
+todo_app/app/controllers.top(0x45a3950, 0xc0001900e0, 0xc00010a100)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4547700, 0x45a3950, 0xc0001900e0, 0xc00010a100)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47be060, 0x45a3950, 0xc0001900e0, 0xc00010a100)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000112000, 0x45a3950, 0xc0001900e0, 0xc00010a100)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0000bf400, 0x45a4100, 0xc000090500)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/23 15:17:13 server.go:3119: http: panic serving 127.0.0.1:65182: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 34 [running]:
+net/http.(*conn).serve.func1(0xc000208000)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x44d1820, 0xc000204510)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x45a3950, 0xc000238000, 0x44ae840, 0x4597850, 0xc000218aa8, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:20 +0x2ce
+todo_app/app/controllers.top(0x45a3950, 0xc000238000, 0xc000222000)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4547700, 0x45a3950, 0xc000238000, 0xc000222000)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47be060, 0x45a3950, 0xc000238000, 0xc000222000)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000112000, 0x45a3950, 0xc000238000, 0xc000222000)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc000208000, 0x45a4100, 0xc00021e000)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/23 15:17:14 server.go:3119: http: panic serving 127.0.0.1:65187: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc0001d2000)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x44d1820, 0xc00007ac90)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x45a3950, 0xc0002380e0, 0x44ae840, 0x4597850, 0xc000218aa8, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:20 +0x2ce
+todo_app/app/controllers.top(0x45a3950, 0xc0002380e0, 0xc000222100)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4547700, 0x45a3950, 0xc0002380e0, 0xc000222100)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47be060, 0x45a3950, 0xc0002380e0, 0xc000222100)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000112000, 0x45a3950, 0xc0002380e0, 0xc000222100)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0001d2000, 0x45a4100, 0xc00021e300)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/23 15:17:14 server.go:3119: http: panic serving 127.0.0.1:65188: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 8 [running]:
+net/http.(*conn).serve.func1(0xc0001d20a0)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x44d1820, 0xc000204d20)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x45a3950, 0xc0002381c0, 0x44ae840, 0x4597850, 0xc00005baa8, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:20 +0x2ce
+todo_app/app/controllers.top(0x45a3950, 0xc0002381c0, 0xc000180100)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4547700, 0x45a3950, 0xc0002381c0, 0xc000180100)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47be060, 0x45a3950, 0xc0002381c0, 0xc000180100)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000112000, 0x45a3950, 0xc0002381c0, 0xc000180100)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0001d20a0, 0x45a4100, 0xc00007c600)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/23 15:17:14 server.go:3119: http: panic serving 127.0.0.1:65189: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 41 [running]:
+net/http.(*conn).serve.func1(0xc0002080a0)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x44d1820, 0xc000205260)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x45a3950, 0xc0002382a0, 0x44ae840, 0x4597850, 0xc00005baa8, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:20 +0x2ce
+todo_app/app/controllers.top(0x45a3950, 0xc0002382a0, 0xc000222200)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4547700, 0x45a3950, 0xc0002382a0, 0xc000222200)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47be060, 0x45a3950, 0xc0002382a0, 0xc000222200)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000112000, 0x45a3950, 0xc0002382a0, 0xc000222200)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0002080a0, 0x45a4100, 0xc00021e740)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/23 15:17:15 server.go:3119: http: panic serving 127.0.0.1:65191: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 24 [running]:
+net/http.(*conn).serve.func1(0xc0000bf4a0)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x44d1820, 0xc000205320)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x45a3950, 0xc0001120e0, 0x44ae840, 0x4597850, 0xc00005baa8, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:20 +0x2ce
+todo_app/app/controllers.top(0x45a3950, 0xc0001120e0, 0xc000222300)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4547700, 0x45a3950, 0xc0001120e0, 0xc000222300)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47be060, 0x45a3950, 0xc0001120e0, 0xc000222300)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000112000, 0x45a3950, 0xc0001120e0, 0xc000222300)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0000bf4a0, 0x45a4100, 0xc00021ea40)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/23 15:17:15 server.go:3119: http: panic serving 127.0.0.1:65192: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 25 [running]:
+net/http.(*conn).serve.func1(0xc0000bf540)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x44d1820, 0xc0002057a0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x45a3950, 0xc000238380, 0x44ae840, 0x4597850, 0xc000056aa8, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:20 +0x2ce
+todo_app/app/controllers.top(0x45a3950, 0xc000238380, 0xc00010a300)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4547700, 0x45a3950, 0xc000238380, 0xc00010a300)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47be060, 0x45a3950, 0xc000238380, 0xc00010a300)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000112000, 0x45a3950, 0xc000238380, 0xc00010a300)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0000bf540, 0x45a4100, 0xc0000905c0)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/23 15:17:15 server.go:3119: http: panic serving 127.0.0.1:65193: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 9 [running]:
+net/http.(*conn).serve.func1(0xc0001d2140)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x44d1820, 0xc0002058c0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x45a3950, 0xc0001901c0, 0x44ae840, 0x4597850, 0xc00005caa8, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:20 +0x2ce
+todo_app/app/controllers.top(0x45a3950, 0xc0001901c0, 0xc000180200)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4547700, 0x45a3950, 0xc0001901c0, 0xc000180200)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47be060, 0x45a3950, 0xc0001901c0, 0xc000180200)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000112000, 0x45a3950, 0xc0001901c0, 0xc000180200)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0001d2140, 0x45a4100, 0xc00007c7c0)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/23 15:17:15 server.go:3119: http: panic serving 127.0.0.1:65198: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 46 [running]:
+net/http.(*conn).serve.func1(0xc000208140)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x44d1820, 0xc00007b680)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x45a3950, 0xc0001902a0, 0x44ae840, 0x4597850, 0xc000056aa8, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:20 +0x2ce
+todo_app/app/controllers.top(0x45a3950, 0xc0001902a0, 0xc000222400)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4547700, 0x45a3950, 0xc0001902a0, 0xc000222400)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47be060, 0x45a3950, 0xc0001902a0, 0xc000222400)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000112000, 0x45a3950, 0xc0001902a0, 0xc000222400)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc000208140, 0x45a4100, 0xc00021ee80)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/23 15:17:15 server.go:3119: http: panic serving 127.0.0.1:65199: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 12 [running]:
+net/http.(*conn).serve.func1(0xc0001d21e0)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x44d1820, 0xc00007b6e0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x45a3950, 0xc0001121c0, 0x44ae840, 0x4597850, 0xc00005caa8, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:20 +0x2ce
+todo_app/app/controllers.top(0x45a3950, 0xc0001121c0, 0xc000180300)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4547700, 0x45a3950, 0xc0001121c0, 0xc000180300)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47be060, 0x45a3950, 0xc0001121c0, 0xc000180300)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000112000, 0x45a3950, 0xc0001121c0, 0xc000180300)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0001d21e0, 0x45a4100, 0xc00007ca00)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/23 15:17:15 server.go:3119: http: panic serving 127.0.0.1:65200: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 47 [running]:
+net/http.(*conn).serve.func1(0xc0002081e0)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x44d1820, 0xc0002c2000)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x45a3950, 0xc000238460, 0x44ae840, 0x4597850, 0xc000218aa8, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:20 +0x2ce
+todo_app/app/controllers.top(0x45a3950, 0xc000238460, 0xc000222500)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4547700, 0x45a3950, 0xc000238460, 0xc000222500)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47be060, 0x45a3950, 0xc000238460, 0xc000222500)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000112000, 0x45a3950, 0xc000238460, 0xc000222500)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0002081e0, 0x45a4100, 0xc00021efc0)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/23 15:17:16 server.go:3119: http: panic serving 127.0.0.1:65205: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 50 [running]:
+net/http.(*conn).serve.func1(0xc000208280)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x44d1820, 0xc00012e480)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x45a3950, 0xc0001122a0, 0x44ae840, 0x4597850, 0xc00005caa8, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:20 +0x2ce
+todo_app/app/controllers.top(0x45a3950, 0xc0001122a0, 0xc00010a400)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4547700, 0x45a3950, 0xc0001122a0, 0xc00010a400)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47be060, 0x45a3950, 0xc0001122a0, 0xc00010a400)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000112000, 0x45a3950, 0xc0001122a0, 0xc00010a400)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc000208280, 0x45a4100, 0xc0000909c0)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/23 15:17:16 server.go:3119: http: panic serving 127.0.0.1:65206: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 51 [running]:
+net/http.(*conn).serve.func1(0xc000208320)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x44d1820, 0xc00007bb60)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x45a3950, 0xc000190380, 0x44ae840, 0x4597850, 0xc000218aa8, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:20 +0x2ce
+todo_app/app/controllers.top(0x45a3950, 0xc000190380, 0xc000222600)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4547700, 0x45a3950, 0xc000190380, 0xc000222600)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47be060, 0x45a3950, 0xc000190380, 0xc000222600)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000112000, 0x45a3950, 0xc000190380, 0xc000222600)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc000208320, 0x45a4100, 0xc00021f2c0)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/23 15:17:16 server.go:3119: http: panic serving 127.0.0.1:65207: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 52 [running]:
+net/http.(*conn).serve.func1(0xc0002083c0)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x44d1820, 0xc00012e600)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x45a3950, 0xc000238540, 0x44ae840, 0x4597850, 0xc000219aa8, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:20 +0x2ce
+todo_app/app/controllers.top(0x45a3950, 0xc000238540, 0xc000222700)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4547700, 0x45a3950, 0xc000238540, 0xc000222700)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47be060, 0x45a3950, 0xc000238540, 0xc000222700)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000112000, 0x45a3950, 0xc000238540, 0xc000222700)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0002083c0, 0x45a4100, 0xc00021f340)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/23 15:17:17 server.go:3119: http: panic serving 127.0.0.1:65212: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 55 [running]:
+net/http.(*conn).serve.func1(0xc000208460)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x44d1820, 0xc0002c2690)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x45a3950, 0xc000112380, 0x44ae840, 0x4597850, 0xc00005caa8, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:20 +0x2ce
+todo_app/app/controllers.top(0x45a3950, 0xc000112380, 0xc00010a500)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4547700, 0x45a3950, 0xc000112380, 0xc00010a500)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47be060, 0x45a3950, 0xc000112380, 0xc00010a500)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000112000, 0x45a3950, 0xc000112380, 0xc00010a500)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc000208460, 0x45a4100, 0xc000090e00)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/23 15:17:17 server.go:3119: http: panic serving 127.0.0.1:65213: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 56 [running]:
+net/http.(*conn).serve.func1(0xc000208500)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x44d1820, 0xc0002c2b10)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x45a3950, 0xc000238620, 0x44ae840, 0x4597850, 0xc000219aa8, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:20 +0x2ce
+todo_app/app/controllers.top(0x45a3950, 0xc000238620, 0xc000222800)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4547700, 0x45a3950, 0xc000238620, 0xc000222800)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47be060, 0x45a3950, 0xc000238620, 0xc000222800)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000112000, 0x45a3950, 0xc000238620, 0xc000222800)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc000208500, 0x45a4100, 0xc00021f500)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/23 15:17:17 server.go:3119: http: panic serving 127.0.0.1:65214: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 66 [running]:
+net/http.(*conn).serve.func1(0xc0001d2280)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x44d1820, 0xc00012ea50)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x45a3950, 0xc000190460, 0x44ae840, 0x4597850, 0xc000218aa8, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:20 +0x2ce
+todo_app/app/controllers.top(0x45a3950, 0xc000190460, 0xc000180400)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4547700, 0x45a3950, 0xc000190460, 0xc000180400)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47be060, 0x45a3950, 0xc000190460, 0xc000180400)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000112000, 0x45a3950, 0xc000190460, 0xc000180400)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0001d2280, 0x45a4100, 0xc00007d080)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/23 15:17:18 server.go:3119: http: panic serving 127.0.0.1:65219: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 69 [running]:
+net/http.(*conn).serve.func1(0xc0001d2320)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x44d1820, 0xc00012ec30)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x45a3950, 0xc000190540, 0x44ae840, 0x4597850, 0xc00005caa8, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:20 +0x2ce
+todo_app/app/controllers.top(0x45a3950, 0xc000190540, 0xc00010a600)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4547700, 0x45a3950, 0xc000190540, 0xc00010a600)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47be060, 0x45a3950, 0xc000190540, 0xc00010a600)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000112000, 0x45a3950, 0xc000190540, 0xc00010a600)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0001d2320, 0x45a4100, 0xc000091080)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/23 15:17:18 server.go:3119: http: panic serving 127.0.0.1:65220: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 70 [running]:
+net/http.(*conn).serve.func1(0xc0001d23c0)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x44d1820, 0xc0001f89c0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x45a3950, 0xc000190620, 0x44ae840, 0x4597850, 0xc000218aa8, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:20 +0x2ce
+todo_app/app/controllers.top(0x45a3950, 0xc000190620, 0xc000180500)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4547700, 0x45a3950, 0xc000190620, 0xc000180500)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47be060, 0x45a3950, 0xc000190620, 0xc000180500)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000112000, 0x45a3950, 0xc000190620, 0xc000180500)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0001d23c0, 0x45a4100, 0xc00007d2c0)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/23 15:17:18 server.go:3119: http: panic serving 127.0.0.1:65221: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 82 [running]:
+net/http.(*conn).serve.func1(0xc0000bf5e0)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x44d1820, 0xc0001f8a50)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x45a3950, 0xc000112460, 0x44ae840, 0x4597850, 0xc00005baa8, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:20 +0x2ce
+todo_app/app/controllers.top(0x45a3950, 0xc000112460, 0xc00010a700)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4547700, 0x45a3950, 0xc000112460, 0xc00010a700)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47be060, 0x45a3950, 0xc000112460, 0xc00010a700)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000112000, 0x45a3950, 0xc000112460, 0xc00010a700)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0000bf5e0, 0x45a4100, 0xc000091240)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/23 15:17:18 server.go:3119: http: panic serving 127.0.0.1:65222: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 85 [running]:
+net/http.(*conn).serve.func1(0xc0000bf680)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x44d1820, 0xc00012f380)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x45a3950, 0xc000238700, 0x44ae840, 0x4597850, 0xc000218aa8, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:20 +0x2ce
+todo_app/app/controllers.top(0x45a3950, 0xc000238700, 0xc000180600)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4547700, 0x45a3950, 0xc000238700, 0xc000180600)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47be060, 0x45a3950, 0xc000238700, 0xc000180600)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000112000, 0x45a3950, 0xc000238700, 0xc000180600)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0000bf680, 0x45a4100, 0xc00007d7c0)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/23 15:17:18 server.go:3119: http: panic serving 127.0.0.1:65223: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 86 [running]:
+net/http.(*conn).serve.func1(0xc0000bf720)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x44d1820, 0xc0001f8f30)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x45a3950, 0xc000190700, 0x44ae840, 0x4597850, 0xc00005baa8, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:20 +0x2ce
+todo_app/app/controllers.top(0x45a3950, 0xc000190700, 0xc00010a800)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4547700, 0x45a3950, 0xc000190700, 0xc00010a800)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47be060, 0x45a3950, 0xc000190700, 0xc00010a800)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000112000, 0x45a3950, 0xc000190700, 0xc00010a800)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0000bf720, 0x45a4100, 0xc000091480)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/23 15:17:18 server.go:3119: http: panic serving 127.0.0.1:65224: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 87 [running]:
+net/http.(*conn).serve.func1(0xc0000bf7c0)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x44d1820, 0xc00012f8c0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x45a3950, 0xc000112540, 0x44ae840, 0x4597850, 0xc000057aa8, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:20 +0x2ce
+todo_app/app/controllers.top(0x45a3950, 0xc000112540, 0xc00010a900)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4547700, 0x45a3950, 0xc000112540, 0xc00010a900)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47be060, 0x45a3950, 0xc000112540, 0xc00010a900)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000112000, 0x45a3950, 0xc000112540, 0xc00010a900)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0000bf7c0, 0x45a4100, 0xc000091640)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/23 15:17:19 server.go:3119: http: panic serving 127.0.0.1:65229: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 90 [running]:
+net/http.(*conn).serve.func1(0xc0000bf860)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x44d1820, 0xc0001f90b0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x45a3950, 0xc000112620, 0x44ae840, 0x4597850, 0xc000057aa8, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:20 +0x2ce
+todo_app/app/controllers.top(0x45a3950, 0xc000112620, 0xc00010aa00)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4547700, 0x45a3950, 0xc000112620, 0xc00010aa00)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47be060, 0x45a3950, 0xc000112620, 0xc00010aa00)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000112000, 0x45a3950, 0xc000112620, 0xc00010aa00)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0000bf860, 0x45a4100, 0xc000091940)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/23 15:17:19 server.go:3119: http: panic serving 127.0.0.1:65230: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 91 [running]:
+net/http.(*conn).serve.func1(0xc0000bf900)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x44d1820, 0xc0001f9410)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x45a3950, 0xc0001907e0, 0x44ae840, 0x4597850, 0xc000058aa8, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:20 +0x2ce
+todo_app/app/controllers.top(0x45a3950, 0xc0001907e0, 0xc00010ab00)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4547700, 0x45a3950, 0xc0001907e0, 0xc00010ab00)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47be060, 0x45a3950, 0xc0001907e0, 0xc00010ab00)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000112000, 0x45a3950, 0xc0001907e0, 0xc00010ab00)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0000bf900, 0x45a4100, 0xc0000919c0)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/23 15:17:19 server.go:3119: http: panic serving 127.0.0.1:65231: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 61 [running]:
+net/http.(*conn).serve.func1(0xc0002085a0)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x44d1820, 0xc0002c3350)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x45a3950, 0xc0002387e0, 0x44ae840, 0x4597850, 0xc000218aa8, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:20 +0x2ce
+todo_app/app/controllers.top(0x45a3950, 0xc0002387e0, 0xc000222900)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4547700, 0x45a3950, 0xc0002387e0, 0xc000222900)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47be060, 0x45a3950, 0xc0002387e0, 0xc000222900)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000112000, 0x45a3950, 0xc0002387e0, 0xc000222900)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0002085a0, 0x45a4100, 0xc00021fa00)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/23 15:17:25 server.go:3119: http: panic serving 127.0.0.1:65256: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 94 [running]:
+net/http.(*conn).serve.func1(0xc0000bf9a0)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x44d1820, 0xc0001f9590)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x45a3950, 0xc000112700, 0x44ae840, 0x4597850, 0xc000057aa8, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:20 +0x2ce
+todo_app/app/controllers.top(0x45a3950, 0xc000112700, 0xc00010ac00)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4547700, 0x45a3950, 0xc000112700, 0xc00010ac00)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47be060, 0x45a3950, 0xc000112700, 0xc00010ac00)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000112000, 0x45a3950, 0xc000112700, 0xc00010ac00)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0000bf9a0, 0x45a4100, 0xc000091c80)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/23 15:17:25 server.go:3119: http: panic serving 127.0.0.1:65257: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 95 [running]:
+net/http.(*conn).serve.func1(0xc0000bfa40)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x44d1820, 0xc0001f9a10)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x45a3950, 0xc0001908c0, 0x44ae840, 0x4597850, 0xc000059aa8, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:20 +0x2ce
+todo_app/app/controllers.top(0x45a3950, 0xc0001908c0, 0xc00010ad00)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4547700, 0x45a3950, 0xc0001908c0, 0xc00010ad00)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47be060, 0x45a3950, 0xc0001908c0, 0xc00010ad00)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000112000, 0x45a3950, 0xc0001908c0, 0xc00010ad00)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0000bfa40, 0x45a4100, 0xc000091d00)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/23 15:17:25 server.go:3119: http: panic serving 127.0.0.1:65258: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 98 [running]:
+net/http.(*conn).serve.func1(0xc0000bfae0)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x44d1820, 0xc0002c3470)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x45a3950, 0xc0001127e0, 0x44ae840, 0x4597850, 0xc000057aa8, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:20 +0x2ce
+todo_app/app/controllers.top(0x45a3950, 0xc0001127e0, 0xc00010ae00)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4547700, 0x45a3950, 0xc0001127e0, 0xc00010ae00)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47be060, 0x45a3950, 0xc0001127e0, 0xc00010ae00)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000112000, 0x45a3950, 0xc0001127e0, 0xc00010ae00)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0000bfae0, 0x45a4100, 0xc000091ec0)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/23 15:17:30 server.go:3119: http: panic serving 127.0.0.1:65279: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 81 [running]:
+net/http.(*conn).serve.func1(0xc0001d2460)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x44d1820, 0xc0002c3650)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x45a3950, 0xc0001909a0, 0x44ae840, 0x4597850, 0xc000218aa8, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:20 +0x2ce
+todo_app/app/controllers.top(0x45a3950, 0xc0001909a0, 0xc000222a00)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4547700, 0x45a3950, 0xc0001909a0, 0xc000222a00)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47be060, 0x45a3950, 0xc0001909a0, 0xc000222a00)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000112000, 0x45a3950, 0xc0001909a0, 0xc000222a00)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0001d2460, 0x45a4100, 0xc00021fdc0)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/23 15:17:30 server.go:3119: http: panic serving 127.0.0.1:65280: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 114 [running]:
+net/http.(*conn).serve.func1(0xc0001d2500)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x44d1820, 0xc000400870)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x45a3950, 0xc0002388c0, 0x44ae840, 0x4597850, 0xc000059aa8, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:20 +0x2ce
+todo_app/app/controllers.top(0x45a3950, 0xc0002388c0, 0xc000180700)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4547700, 0x45a3950, 0xc0002388c0, 0xc000180700)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47be060, 0x45a3950, 0xc0002388c0, 0xc000180700)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000112000, 0x45a3950, 0xc0002388c0, 0xc000180700)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0001d2500, 0x45a4100, 0xc00037e200)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/23 15:17:30 server.go:3119: http: panic serving 127.0.0.1:65281: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 130 [running]:
+net/http.(*conn).serve.func1(0xc000208640)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x44d1820, 0xc0002c3e90)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x45a3950, 0xc0002389a0, 0x44ae840, 0x4597850, 0xc000059aa8, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:20 +0x2ce
+todo_app/app/controllers.top(0x45a3950, 0xc0002389a0, 0xc000222b00)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4547700, 0x45a3950, 0xc0002389a0, 0xc000222b00)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47be060, 0x45a3950, 0xc0002389a0, 0xc000222b00)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000112000, 0x45a3950, 0xc0002389a0, 0xc000222b00)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc000208640, 0x45a4100, 0xc0003d40c0)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/23 15:17:50 server.go:3119: http: panic serving 127.0.0.1:65366: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc000119400)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x44d1820, 0xc0001097a0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x45a3950, 0xc0000b8000, 0x44ae840, 0x4597850, 0xc000121aa8, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:20 +0x2ce
+todo_app/app/controllers.top(0x45a3950, 0xc0000b8000, 0xc00015c100)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4547700, 0x45a3950, 0xc0000b8000, 0xc00015c100)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47be060, 0x45a3950, 0xc0000b8000, 0xc00015c100)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000164000, 0x45a3950, 0xc0000b8000, 0xc00015c100)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc000119400, 0x45a4100, 0xc000072500)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/23 15:17:50 server.go:3119: http: panic serving 127.0.0.1:65367: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 18 [running]:
+net/http.(*conn).serve.func1(0xc00009a000)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x44d1820, 0xc000208060)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x45a3950, 0xc0001640e0, 0x44ae840, 0x4597850, 0xc000057aa8, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:20 +0x2ce
+todo_app/app/controllers.top(0x45a3950, 0xc0001640e0, 0xc0000a4000)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4547700, 0x45a3950, 0xc0001640e0, 0xc0000a4000)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47be060, 0x45a3950, 0xc0001640e0, 0xc0000a4000)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000164000, 0x45a3950, 0xc0001640e0, 0xc0000a4000)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc00009a000, 0x45a4100, 0xc00009e000)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/23 15:17:50 server.go:3119: http: panic serving 127.0.0.1:65368: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 34 [running]:
+net/http.(*conn).serve.func1(0xc000232000)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x44d1820, 0xc0000965d0)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x45a3950, 0xc000254000, 0x44ae840, 0x4597850, 0xc000240aa8, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:20 +0x2ce
+todo_app/app/controllers.top(0x45a3950, 0xc000254000, 0xc000244000)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4547700, 0x45a3950, 0xc000254000, 0xc000244000)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47be060, 0x45a3950, 0xc000254000, 0xc000244000)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000164000, 0x45a3950, 0xc000254000, 0xc000244000)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc000232000, 0x45a4100, 0xc0002040c0)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/23 15:18:20 server.go:3119: http: panic serving 127.0.0.1:65497: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 37 [running]:
+net/http.(*conn).serve.func1(0xc0002320a0)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x44d1820, 0xc000208a80)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x45a3950, 0xc0002540e0, 0x44ae840, 0x4597850, 0xc000240aa8, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:20 +0x2ce
+todo_app/app/controllers.top(0x45a3950, 0xc0002540e0, 0xc000244100)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4547700, 0x45a3950, 0xc0002540e0, 0xc000244100)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47be060, 0x45a3950, 0xc0002540e0, 0xc000244100)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000164000, 0x45a3950, 0xc0002540e0, 0xc000244100)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc0002320a0, 0x45a4100, 0xc000204280)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/23 15:18:20 server.go:3119: http: panic serving 127.0.0.1:65498: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 38 [running]:
+net/http.(*conn).serve.func1(0xc000232140)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x44d1820, 0xc000096750)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x45a3950, 0xc0001641c0, 0x44ae840, 0x4597850, 0xc000241aa8, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:20 +0x2ce
+todo_app/app/controllers.top(0x45a3950, 0xc0001641c0, 0xc000244200)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4547700, 0x45a3950, 0xc0001641c0, 0xc000244200)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47be060, 0x45a3950, 0xc0001641c0, 0xc000244200)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000164000, 0x45a3950, 0xc0001641c0, 0xc000244200)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc000232140, 0x45a4100, 0xc000204340)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
+2021/11/23 15:18:20 server.go:3119: http: panic serving 127.0.0.1:65499: open app/views/templates/public_navbar.html: no such file or directory
+goroutine 21 [running]:
+net/http.(*conn).serve.func1(0xc00009a0a0)
+	/usr/local/go/src/net/http/server.go:1804 +0x153
+panic(0x44d1820, 0xc000208c00)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app/app/controllers.generateHTML(0x45a3950, 0xc0000b80e0, 0x44ae840, 0x4597850, 0xc000058aa8, 0x3, 0x3)
+	/Users/takehiro/go/src/todo_app/app/controllers/server.go:20 +0x2ce
+todo_app/app/controllers.top(0x45a3950, 0xc0000b80e0, 0xc0000a4100)
+	/Users/takehiro/go/src/todo_app/app/controllers/route_main.go:13 +0xc5
+net/http.HandlerFunc.ServeHTTP(0x4547700, 0x45a3950, 0xc0000b80e0, 0xc0000a4100)
+	/usr/local/go/src/net/http/server.go:2049 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47be060, 0x45a3950, 0xc0000b80e0, 0xc0000a4100)
+	/usr/local/go/src/net/http/server.go:2428 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000164000, 0x45a3950, 0xc0000b80e0, 0xc0000a4100)
+	/usr/local/go/src/net/http/server.go:2867 +0xa3
+net/http.(*conn).serve(0xc00009a0a0, 0x45a4100, 0xc00009e4c0)
+	/usr/local/go/src/net/http/server.go:1932 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2993 +0x39b
