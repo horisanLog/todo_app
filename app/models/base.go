@@ -31,6 +31,7 @@ func init() {
 	connection, _ := pq.ParseURL(url)
 	connection += "sslmode=require"
 	Db, err = sql.Open(config.Config.SQLDriver, connection)
+	fmt.Println(err)
 	if err != nil {
 		log.Fatalln(err)
 	}
