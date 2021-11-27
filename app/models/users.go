@@ -31,19 +31,18 @@ func (u *User) CreateUser() (err error) {
 		password,
 		created_at) values ($1, $2, $3, $4, $5)`
 
-		_, err = Db.Exec(cmd,
-			createUUID(),
-			u.Name,
-			u.Email,
-			Encrypt(u.PassWord),
-			time.Now())
+	_, err = Db.Exec(cmd,
+		createUUID(),
+		u.Name,
+		u.Email,
+		Encrypt(u.PassWord),
+		time.Now())
 
-		if err != nil {
-			log.Fatalln(err)
-		}
-		return err
+	if err != nil {
+		log.Fatalln(err)
+	}
+	return err
 }
-
 
 func GetUser(id int) (user User, err error) {
 	user = User{}
@@ -72,15 +71,6 @@ func (u *User) UpdateUser() (err error) {
 func (u *User) DeleteUser() (err error) {
 	cmd := `delete from users where id = $1`
 	_, err = Db.Exec(cmd, u.ID)
-	if err != nil {
-		log.Fatalln(err)
-	}
-	return err
-}
-
-func (sess *Session) DeleteSessionByUUID() (err error) {
-	cmd := `delete from sessions where uuid = $1`
-	_, err = Db.Exec(cmd, sess.UUID)
 	if err != nil {
 		log.Fatalln(err)
 	}
@@ -147,6 +137,15 @@ func (sess *Session) CheckSession() (valid bool, err error) {
 		valid = true
 	}
 	return valid, err
+}
+
+func (sess *Session) DeleteSessionByUUID() (err error) {
+	cmd := `delete from sessions where uuid = $1`
+	_, err = Db.Exec(cmd, sess.UUID)
+	if err != nil {
+		log.Fatalln(err)
+	}
+	return err
 }
 
 func (sess *Session) GetUserBySession() (user User, err error) {
