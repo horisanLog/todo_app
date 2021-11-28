@@ -31,11 +31,11 @@ func init() {
 	connection, _ := pq.ParseURL(url)
 	connection += "sslmode=require"
 	Db, err = sql.Open(config.Config.SQLDriver, connection)
-	fmt.Println(err)
+	fmt.Println(Db)
 	if err != nil {
 		log.Fatalln(err)
 	}
-	
+
 
 	// url := os.Getenv("DATABASE_URL")
 	// connection, _ := pq.ParseURL(url)
