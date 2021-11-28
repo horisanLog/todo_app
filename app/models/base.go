@@ -35,6 +35,7 @@ func init() {
 	if err != nil {
 		log.Fatalln(err)
 	}
+	
 
 	// url := os.Getenv("DATABASE_URL")
 	// connection, _ := pq.ParseURL(url)
